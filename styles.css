@@ -1,3 +1,16 @@
-.testFont {
-  font-family: 'Lato', sans-serif;
+body {
+  padding-top: 70px;
+}
+
+.navbar ul li { 
+	padding: 0px 10px; 
+ } 
+ 
+.navbar-nav {
+  font-size: 12px;
+  font-family: Lato;
+}
+
+.text-decoration-none {
+  color: black;
 }
