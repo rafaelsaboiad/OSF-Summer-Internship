@@ -2,15 +2,26 @@ body {
   padding-top: 70px;
 }
 
+.navbar {
+height: 6.3rem;
+
+}
+
 .navbar ul li { 
-	padding: 0px 10px; 
- } 
- 
-.navbar-nav {
-  font-size: 12px;
-  font-family: Lato;
+	padding: 0rem 2rem; 
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight:bold;
+} 
+
+.container {
+  border-bottom: 0.1rem solid #dddad5;
 }
 
 .text-decoration-none {
-  color: black;
+  color: rgb(124,123,121);
+}
+
+#colorGray {
+  color: rgb(169,168,167);
 }
