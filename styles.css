@@ -1,15 +1,22 @@
 /*html config*/
 html{
-  padding-top: 70px;
-  padding-left: 310px;
-  padding-right: 310px;
+  padding-top: 82px;
   background-color: lightgray;
-  
+  height: 100%;
+}
+
+body { 
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*Navbar size*/
 .navbar {
-height: 4.7rem;
+  height: 82px;
+  width: 100vw;
+  border-bottom: 2px solid #F3F0EB;
 }
 
 /* Navbar list styling*/
@@ -19,34 +26,55 @@ height: 4.7rem;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  padding: 1rem;
   color:#45413E;
-  
-  display: flex;
-  align-items: flex-end;
-  text-transform: uppercase;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top:1rem;
+  padding-bottom:40px;
+
   margin-top: 0.7rem;
 } 
 
-.navbar-brand {
-  margin-left: 4rem;
-  margin-top: 10px;
+.positionIcons {
+  margin-top: 0.4rem;
+  padding: 1rem;
 }
 
-/*Bottom border of the Navbar */
-.container {
-  border-bottom: 2px solid #F3F0EB;
-  margin-top: 0px;
-  margin-left: 0px;
-  height: 79px;
+#hoverSelect {
+  position: relative;
+  display: inline-block;
+  right: 30px;
+  white-space: nowrap;
+}
 
-  
-  
+/* Select currency and language styling*/
+.selectOk {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 1rem;
+  color:#A9A8A7 !important;
+  margin-bottom: 0.4rem;
+}
+
+/* Override bootstrap default*/
+.form-select {
+  border: 0px solid #ced4da !important;
+  box-shadow: none !important;
+}
+
+/*Logo on navbar */
+.navbar-brand {
+  margin-left: 60px;
+  margin-top: 5px;
 }
 
 /* Language and currency set color */
 .colorGray {
-  color: rgb(169,168,167);
+  color: #A9A8A7;
 }
 
 /* Style The Dropdown Button */
@@ -61,6 +89,7 @@ height: 4.7rem;
 .dropdown {
   position: relative;
   display: inline-block;
+  right: 30px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -82,7 +111,9 @@ height: 4.7rem;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -91,5 +122,32 @@ height: 4.7rem;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: white;
+  background-color: #262A32;
+  color: white !important;
+  border-bottom: 2px solid #84BC22;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top:1rem;
+  padding-bottom:38px;
+
+}
+
+/* Turn on hover colors */
+#hoverSelect:hover {
+  background-color: #262A32;
+  color:white;
+  border-bottom: 2px solid #84BC22;
+  
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top:1rem;
+  padding-bottom:38px;
+
+  margin-top: 0.7rem;
+
+}
+
+select.form-select.selectOk {
+  width: fit-content;
 }
