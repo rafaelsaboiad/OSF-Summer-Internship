@@ -1,6 +1,6 @@
 /*html config*/
 html{
-  padding-top: 82px;
+  padding-top: 72px;
   background-color: lightgray;
   height: 100%;
 }
@@ -12,13 +12,7 @@ body {
   flex-direction: column;
 }
 
-/*Navbar size*/
-.navbar {
-  height: 82px;
-  width: 100vw;
-  border-bottom: 2px solid #F3F0EB;
-}
-
+/* !!!!!!!!!!!!!!!! LIST STYLING AND POSITION !!!!!!!!!!!!!!!! */
 /* Navbar list styling*/
 .listOk { 
   font-family: 'Lato';
@@ -28,53 +22,35 @@ body {
   line-height: 17px;
   color:#45413E;
 
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top:1rem;
-  padding-bottom:40px;
-
-  margin-top: 0.7rem;
-} 
-
-.positionIcons {
-  margin-top: 0.4rem;
   padding: 1rem;
-}
+  padding-bottom: 31px;
 
-#hoverSelect {
+  margin-bottom: 5px;
+  margin-top:20px;
+  
   position: relative;
   display: inline-block;
-  right: 30px;
   white-space: nowrap;
-}
+} 
 
-/* Select currency and language styling*/
-.selectOk {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+/* List icons position*/
+.positionIcons {
+  margin-top:15px;
   padding: 1rem;
-  color:#A9A8A7 !important;
-  margin-bottom: 0.4rem;
 }
 
-/* Override bootstrap default*/
-.form-select {
-  border: 0px solid #ced4da !important;
-  box-shadow: none !important;
+/* !!!!!!!!!!!!!!!! NAV-BAR CONFIG !!!!!!!!!!!!!!!! */
+/*Navbar size*/
+.navbar {
+  height: 80px;
+  width: 100vw;
+  border-bottom: 2px solid #F3F0EB;
 }
 
 /*Logo on navbar */
 .navbar-brand {
-  margin-left: 60px;
-  margin-top: 5px;
-}
-
-/* Language and currency set color */
-.colorGray {
-  color: #A9A8A7;
+  margin-left: 62px;
+  margin-top: 3px;
 }
 
 /* Style The Dropdown Button */
@@ -89,7 +65,6 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-  right: 30px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -112,7 +87,7 @@ body {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
 }
 
 /* Show the dropdown menu on hover */
@@ -120,34 +95,72 @@ body {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/* Change the background color of the dropdown button when the dropdown content is shown (SERVICES)*/
 .dropdown:hover .dropbtn {
   background-color: #262A32;
   color: white !important;
   border-bottom: 2px solid #84BC22;
 
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top:1rem;
-  padding-bottom:38px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color:#45413E;
 
+  padding: 1rem;
+  padding-bottom: 31px;
+  margin-top:20px;
 }
 
-/* Turn on hover colors */
-#hoverSelect:hover {
+/* Separate dropdown Button style text (SERVICES)*/
+.listServices {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color:#45413E;
+
+  padding: 1rem;
+  margin-bottom: 5px;
+  margin-top:20px;
+}
+
+/* Turn on hover colors LIST*/
+.listOk:hover {
   background-color: #262A32;
   color:white;
   border-bottom: 2px solid #84BC22;
-  
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top:1rem;
-  padding-bottom:38px;
-
-  margin-top: 0.7rem;
-
 }
 
+/* !!!!!!!!!!!!!!!! SELECTOR CONFIG !!!!!!!!!!!!!!!! */
+/* Select currency and language styling*/
+.selectOk {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 1rem;
+  color:#A9A8A7 !important;
+
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/*  Select fit content */
 select.form-select.selectOk {
   width: fit-content;
+}
+
+/* Override bootstrap default*/
+.form-select {
+  border: 0px solid #ced4da !important;
+  box-shadow: none !important;
+}
+
+/* Language and currency set color */
+.colorGray {
+  color: #A9A8A7;
 }
