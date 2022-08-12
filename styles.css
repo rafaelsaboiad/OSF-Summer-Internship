@@ -1,15 +1,19 @@
 /*html config*/
 html{
-  padding-top: 72px;
-  background-color: lightgray;
+  margin-top: 11vh;
   height: 100%;
 }
 
 body { 
   min-height: 100vh; 
+  min-width: fit-content;
   display: flex;
-  align-items: center;
   flex-direction: column;
+}
+
+/* !!!!!!!!!!!!!!!! HEADER CONTAINER CONTROL !!!!!!!!!!!!!!!! */
+.header {
+  position:relative;
 }
 
 /* !!!!!!!!!!!!!!!! SQUARE BACKGROUND COLORS AND POSITION !!!!!!!!!!!!!!!! */
@@ -102,7 +106,9 @@ body {
   text-decoration: none;
   display: block;
 
-  width: fit-content;
+  width: max-content;
+  margin-left: 10%;
+  margin-right: 10%;
 
   font-family: 'Lato';
   font-style: normal;
@@ -145,6 +151,7 @@ div.dropdown-content :nth-of-type(34) {
 /* dropdown photo styling */
 a.dropImage img {
   border-radius: 8px;
+  
 }
 
 /* Change color of dropdown links on hover */
@@ -227,31 +234,124 @@ select.form-select.selectOk {
 .colorGray {
   color: #A9A8A7;
 }
+/* !!!!!!!!!!!!!!!! FIRST FLEX CONTAINER  !!!!!!!!!!!!!!!! */
+
+.firstContainer {
+  display: flex;
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+}
 
 /* !!!!!!!!!!!!!!!! CAROUSEL STYLING !!!!!!!!!!!!!!!! */
 
+/* Sizing and styling of carousel */
 .carousel-inner {
-  width: 50%;
-  height: 50%;
   border-radius: 8px;
+  cursor: disabled;
 }
 
+/* Positioning of carousel*/
 #myCarousel {
-  display: flex;
-  margin-top: 2%;
-  margin-right: 15%;
+  width: 870px;
+  height: 505px;
+
 }
 
+/* Carousel title positioning and styling*/
 .carousel-caption h1 {
   text-align: left;
-  margin-top: 0px;
+
+  margin-left: -13%;
+  margin-bottom: 15%;
 
   width: 650px;
   font-size: 48px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 60px;
   display: flex;
+  cursor: disabled;
 
-  margin-left: -75px;
-  margin-bottom: 230px;
+}
+
+/* Carousel content positioning and styling*/
+.carousel-caption p {
+  text-align: start;
+
+  width: 350px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  margin-left: -12%;
+  margin-bottom: 10%;
+  cursor: disabled;
+}
+
+/* Carousel button positioning and styling*/
+.carousel-caption button {
+  width: 160px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+  color: white;
+
+  margin-left: -100%;
+  margin-bottom: 10%;
+
+  background-color: transparent;
+  border-radius: 18px;
+  border-color: lightgray;
+  border-style: solid;
+  opacity: 90%;
+}
+
+/* Carousel left button positioning*/
+button.carousel-control-prev {
+  margin-top: 213px;
+  margin-left: 2%;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* !!!!!!!!!!!!!!!! Summer button !!!!!!!!!!!!!!!! */
+
+.summerButton {
+  
+  
+}
+
+.summerButton h3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+
+  margin-left: 3vw;
+  margin-top: 5vh;
+
+}
+.summerButton p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  width: 200px;
+  text-align: center;
+
+  margin-left: 2.5vw;
+  margin-top: 3vh;
+}
+
+.fbButton {
+  margin-left: 4vw;
+  margin-top: 1vh;
 }
