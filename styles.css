@@ -1,6 +1,6 @@
 /*html config*/
 html{
-  margin-top: 11vh;
+  margin-top: 10vh;
   height: 100%;
 }
 
@@ -14,17 +14,6 @@ body {
 /* !!!!!!!!!!!!!!!! HEADER CONTAINER CONTROL !!!!!!!!!!!!!!!! */
 .header {
   position:relative;
-}
-
-/* !!!!!!!!!!!!!!!! SQUARE BACKGROUND COLORS AND POSITION !!!!!!!!!!!!!!!! */
-
-.darkBlueBackground {
-  position: relative;
-  width: 100vw;
-  height: 800px;
-  background-color: #262A33;
-
-  margin-top: 638px;
 }
 
 /* !!!!!!!!!!!!!!!! LIST STYLING AND POSITION !!!!!!!!!!!!!!!! */
@@ -115,7 +104,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
- 
+
   color: #FFFFFF;
 }
 
@@ -238,7 +227,8 @@ select.form-select.selectOk {
 
 .firstContainer {
   display: flex;
-  position: fixed;
+  position: relative;
+  justify-content: center;
 
   width: 100%;
   height: 100%;
@@ -258,6 +248,7 @@ select.form-select.selectOk {
   width: 870px;
   height: 505px;
 
+  margin-right: 1.5vw;
 }
 
 /* Carousel title positioning and styling*/
@@ -320,13 +311,9 @@ button.carousel-control-prev {
   max-height: 80px;
 }
 
-/* !!!!!!!!!!!!!!!! Summer button !!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! SUMMER BUTTON !!!!!!!!!!!!!!!! */
 
-.summerButton {
-  
-  
-}
-
+/*Follow us text positioning*/
 .summerButton h3 {
   font-family: 'Lato';
   font-style: normal;
@@ -334,10 +321,12 @@ button.carousel-control-prev {
   font-size: 18px;
   line-height: 18px;
 
-  margin-left: 3vw;
-  margin-top: 5vh;
+  margin-left: 2.3vw;
+  margin-top: 2vh;
 
 }
+
+/*Text positioning*/
 .summerButton p {
   font-family: 'Lato';
   font-style: normal;
@@ -347,11 +336,127 @@ button.carousel-control-prev {
   width: 200px;
   text-align: center;
 
-  margin-left: 2.5vw;
+  margin-left: 1.8vw;
+  margin-top: 2vh;
+}
+
+/* Facebook button positioning*/
+.fbButton {
+  margin-left: 3vw;
+  margin-top: 2vh;
+}
+
+/* !!!!!!!!!!!!!!!! SQUARE BACKGROUND COLORS AND POSITION !!!!!!!!!!!!!!!! */
+
+.darkBlueBackground {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #262A33;
+
   margin-top: 3vh;
 }
 
-.fbButton {
-  margin-left: 4vw;
-  margin-top: 1vh;
+/* !!!!!!!!!!!!!!!! CARDS !!!!!!!!!!!!!!!! */
+
+.cardsCustom {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 15vh;
+  width: 60vw;
+  height: 70vh;
+
+  border-radius: 30px;
+}
+
+.insideButton {
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  width: 200px;
+  height: 40px;
+  border-radius: 35px;
+  border-width: 2px;
+  margin-top: 32vh;
+  margin-left: 1.8vw;
+
+  border-color:#e9e6e6;
+  border-style: solid;
+  background-color: white;
+}
+
+.vl {
+  margin-top: -15%;
+  border-left: 3px solid;
+  height: 38px;
+  margin-left: 4.5vw;
+  color:#e9e6e6;
+}
+
+.card-title {
+  text-align:center;
+
+  width: 170px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  margin: auto;
+}
+
+.card-textValue {
+  text-align: center;
+
+  color: #011847;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+  
+  margin-top: 4vh;
+}
+
+img.card-img-top {
+  min-height: 25vh;
+  border: none !important;
+}
+
+div.card-body {
+  height: 12vh;
+  border: none !important;
+}
+
+.card-textValueButton {
+  position: absolute;
+  margin-left: 1.2vw;
+  margin-top: -1.7vh;
+
+
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #24C36C;
+}
+
+.buyButton {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: right;
+
+  margin-right: 1vh;
+  margin-top:0.8vh;
+}
+
+.card {
+  border: none !important;
 }
