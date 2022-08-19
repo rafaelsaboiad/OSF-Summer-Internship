@@ -348,11 +348,12 @@ button.carousel-control-prev {
 
 /* !!!!!!!!!!!!!!!! SQUARE BACKGROUND COLORS AND POSITION !!!!!!!!!!!!!!!! */
 
+/* Dark blue background on popular items area*/
 .darkBlueBackground {
   display: flex;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 1200px;
   background-color: #262A33;
 
   margin-top: 3vh;
@@ -360,41 +361,74 @@ button.carousel-control-prev {
 
 /* !!!!!!!!!!!!!!!! CARDS !!!!!!!!!!!!!!!! */
 
-.cardsCustom {
+.popularItems {
   display: flex;
-  justify-content: center;
-  margin: auto;
+  position: absolute;
+
+  color: white;
+  margin-left: 45vw;
+  margin-top: 7vh;
+  font-family: Lato;
+  font-weight: bold;
+}
+
+.hl {
+  position: absolute;
+  border-bottom: 1px solid #A9A8A7;
+  width: 480px;
+  margin-top: 8.8vh;
+  margin-left: 18vw;
+}
+
+.hlTwo {
+  position: absolute;
+  border-bottom: 1px solid #A9A8A7;
+  width: 480px;
+  margin-top: 8.8vh;
+  margin-left: 56vw;
+}
+
+/* Positioning of the popular items cards*/
+.cardsCustom {
+  position: absolute;
   margin-top: 15vh;
-  width: 60vw;
+  width: 1170px;
   height: 70vh;
+  margin-left: 19.2vw;
+  
 
   border-radius: 30px;
 }
 
+/* Popular item button config*/
 .insideButton {
   display: inline-block;
-  position: absolute;
+  position: relative;
   text-align: right;
   width: 200px;
   height: 40px;
   border-radius: 35px;
   border-width: 2px;
-  margin-top: 32vh;
-  margin-left: 1.8vw;
+  margin-top: 18px;
+  margin-left: 18px;
 
   border-color:#e9e6e6;
   border-style: solid;
   background-color: white;
 }
 
+/* Vertical line on popular item button*/
 .vl {
-  margin-top: -15%;
+  display: flex;
+  position: relative;
+  margin-top: -28px;
+  margin-left: 85px;
   border-left: 3px solid;
   height: 38px;
-  margin-left: 4.5vw;
   color:#e9e6e6;
 }
 
+/* Popular items title*/
 .card-title {
   text-align:center;
 
@@ -407,6 +441,7 @@ button.carousel-control-prev {
   margin: auto;
 }
 
+/* Popular items value text*/
 .card-textValue {
   text-align: center;
 
@@ -420,21 +455,29 @@ button.carousel-control-prev {
   margin-top: 4vh;
 }
 
+/* Cards image sizing*/
 img.card-img-top {
-  min-height: 25vh;
-  border: none !important;
+  display: block;
+  height: 277px;
+  width: 270px;
+  border: none;
+  opacity: 1;
 }
 
+/* Cards body sizing*/
 div.card-body {
-  height: 12vh;
-  border: none !important;
+  display: block;
+  height: 130px;
+  width: 270px;
+  border: none;
+  opacity: 1;
 }
 
+/* Value text on button card*/
 .card-textValueButton {
   position: absolute;
-  margin-left: 1.2vw;
-  margin-top: -1.7vh;
-
+  margin-left: 1.0vw;
+  margin-top: -1.8vh;
 
   font-family: Lato;
   font-size: 14px;
@@ -445,6 +488,7 @@ div.card-body {
   color: #24C36C;
 }
 
+/* Styling of the button text*/
 .buyButton {
   font-family: Lato;
   font-size: 14px;
@@ -457,6 +501,56 @@ div.card-body {
   margin-top:0.8vh;
 }
 
+/* Remove cards border*/
 .card {
   border: none !important;
+}
+
+div.card.h-100 {
+  display: flex;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+/* !!!!!!!!!!!!!! POPULAR ITEMS OVERLAY AND HOVER EFFECTS !!!!!!!!!!!*/
+
+/*Overlay effect*/
+.overlayEffect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #24C36C !important;
+}
+
+/*Show overlay effect*/
+.card:hover .overlayEffect {
+  opacity: 0.8;
+}
+
+/*Hover button config*/
+.insideButton:hover {
+  background-color: #24C36C;
+  color: white;
+}
+
+/*Hover button config*/
+.insideButton:hover .card-textValueButton{
+  background-color: #24C36C;
+  color: white;
+}
+
+/*Hover button config*/
+.insideButton:hover {
+  border-color: #d4d4d4;
+}
+
+/*Hover button config*/
+.insideButton:hover .vl{
+  border-color: #d4d4d4;
 }
