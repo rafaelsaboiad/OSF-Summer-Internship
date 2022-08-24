@@ -595,6 +595,7 @@ div.card.h-100 {
   text-align: center;
   color: white;
 }
+
 /*Banner full text position and sizing*/
 .textPosition {
   display: flex;
@@ -606,7 +607,9 @@ div.card.h-100 {
   vertical-align: middle;
   margin-top: 200px;
 }
+/* !!!!!!!!!!!!!! FEATURED PRODUCTS !!!!!!!!!!!*/
 
+/*Dark blue background featured products*/
 .darkBackground {
   display: flex;
   position: relative;
@@ -617,6 +620,7 @@ div.card.h-100 {
   margin-top: 0vh;
 }
 
+/*Wrapper for styling cards*/
 .cardWrapper {
   display: flex;
   position: relative;
@@ -625,6 +629,7 @@ div.card.h-100 {
   margin-left: 0px;
 }
 
+/*Carousel*/
 #secondCarousel {
   display: flex;
   position: relative;
@@ -632,7 +637,218 @@ div.card.h-100 {
   margin-left: 360px;
 }
 
+/*Carousel*/
 #carouselActive {
   width: 1170px;
 }
 
+/*Carousel buttons config.*/
+#buttonOne {
+  margin-top: 130px;
+  margin-left: 573px;
+}
+
+/*Carousel buttons config.*/
+#buttonTwo {
+  margin-top: 131px;
+  margin-right: 627px;
+  max-width: 80px;
+  max-height: 80px;
+}
+/*Change in-card text*/
+#mktText {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #24C36C;
+}
+
+/*Underline between carousel buttons*/
+.underline {
+  display: flex;
+  position: absolute;
+  border-bottom: 2px solid white;
+  width: 600px;
+  height: 1px;
+  margin-top: 170px;
+  margin-left: 635px;
+}
+
+/*Text config*/
+.featuredProducts {
+  margin-right: 500px;
+  font-family: Lato;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 43px;
+  letter-spacing: 0px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  margin-left: -780px;
+  margin-top: 50px;
+}
+
+/*Text config*/
+.featuredText {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color:white;
+  width: 500px;
+  margin-left: -780px;
+  margin-top: 20px;
+}
+
+/* !!!!!!!!!!!!!! BOTTOM SERVICES !!!!!!!!!!!*/
+
+/*Background config.*/
+.darkGrayBackground {
+  display: flex;
+  background-color: #45413E;
+  position: relative;
+  height: 200px;
+  align-items: center;
+  justify-content:center;
+}
+
+/*Services text config.*/
+.servicesText {
+  display: flex;
+  position: relative;
+
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 320px;
+  color: rgb(138, 135, 135);
+  margin-right: 50px;
+}
+
+/*Services title config.*/
+.servicesTitle {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: start;
+  color: white;
+  padding-bottom: 10px;
+  text-align: left;
+  vertical-align:middle;
+}
+
+/*Icons margin*/
+.bottomIcons {
+  margin-right: 25px;
+}
+
+/* !!!!!!!!!!!!!! FOOTER CONFIG !!!!!!!!!!!*/
+
+.footerWrapper {
+  display: flex;
+  position: absolute;
+  height: 350px;
+  width: 1150px;
+  margin-left: 360px;
+  margin-top: 40px;
+  justify-content: flex-start;
+}
+
+.leftText {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 550;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+h6.contact {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.colOne {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  padding-left: 100px;
+}
+
+.colTwo {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  padding-left: 100px;
+  margin-top: 32px;
+  white-space: nowrap;
+}
+
+.colThree {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  margin-top: 32px;
+  white-space: nowrap;
+}
+
+.colFour {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  padding-left: 100px;
+}
+
+.bottomListOk {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: none;
+  color: gray;
+}
+
+  .bottomListTitle {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+.mediaIcons {
+  display: flex;
+  position: relative;
+  width: 200px;
+  justify-content: space-between;
+  
+}
