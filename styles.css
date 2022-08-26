@@ -49,6 +49,7 @@ body {
   height: 80px;
   width: 100vw;
   border-bottom: 2px solid #F3F0EB;
+  margin-left: -25px;
 }
 
 /*Logo on navbar */
@@ -303,6 +304,25 @@ select.form-select.selectOk {
   opacity: 90%;
 }
 
+.insideCarouselButton {
+  width: 160px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+  color: white;
+
+  margin-left: -100%;
+  margin-bottom: 10%;
+
+  background-color: transparent !important;
+  border-radius: 18px !important;
+  border-color: lightgray !important;
+  border-style: solid;
+  opacity: 90%;
+}
+
 /* Carousel left button positioning*/
 button.carousel-control-prev {
   margin-top: 213px;
@@ -343,7 +363,7 @@ button.carousel-control-prev {
 /* Facebook button positioning*/
 .fbButton {
   margin-left: 3vw;
-  margin-top: 2vh;
+  margin-top: 2.8vh;
 }
 
 /* !!!!!!!!!!!!!!!! SQUARE BACKGROUND COLORS AND POSITION !!!!!!!!!!!!!!!! */
@@ -421,7 +441,7 @@ button.carousel-control-prev {
 .vl {
   display: flex;
   position: relative;
-  margin-top: -28px;
+  margin-top: -26px;
   margin-left: 85px;
   border-left: 3px solid;
   height: 38px;
@@ -757,6 +777,7 @@ div.card.h-100 {
 
 /* !!!!!!!!!!!!!! FOOTER CONFIG !!!!!!!!!!!*/
 
+/*Footer wrapper*/
 .footerWrapper {
   display: flex;
   position: absolute;
@@ -767,6 +788,7 @@ div.card.h-100 {
   justify-content: flex-start;
 }
 
+/*Left side text*/
 .leftText {
   font-family: Lato;
   font-size: 13px;
@@ -777,6 +799,7 @@ div.card.h-100 {
   white-space: nowrap;
 }
 
+/*Styling contact title text*/
 h6.contact {
   font-family: Lato;
   font-size: 13px;
@@ -786,12 +809,14 @@ h6.contact {
   text-align: left;
 }
 
+/*Row of columns*/
 .bottomRow {
   display: flex;
   flex-direction:row;
   justify-content: center;
 }
 
+/*Column One*/
 .colOne {
   display: flex;
   flex-direction: column;
@@ -799,6 +824,7 @@ h6.contact {
   padding-left: 100px;
 }
 
+/*Column two*/
 .colTwo {
   display: flex;
   flex-direction: column;
@@ -808,6 +834,7 @@ h6.contact {
   white-space: nowrap;
 }
 
+/*Column three*/
 .colThree {
   display: flex;
   flex-direction: column;
@@ -816,6 +843,7 @@ h6.contact {
   white-space: nowrap;
 }
 
+/*Column four*/
 .colFour {
   display: flex;
   flex-direction: column;
@@ -823,6 +851,7 @@ h6.contact {
   padding-left: 100px;
 }
 
+/*Columns text styling*/
 .bottomListOk {
   font-family: Lato;
   font-size: 13px;
@@ -834,6 +863,7 @@ h6.contact {
   color: gray;
 }
 
+/*Columns titles text styling*/
   .bottomListTitle {
   font-family: Lato;
   font-size: 13px;
@@ -845,10 +875,15 @@ h6.contact {
   color: black;
 }
 
+/*Footer media icons*/
 .mediaIcons {
   display: flex;
   position: relative;
   width: 200px;
   justify-content: space-between;
-  
+}
+
+.footerLinks {
+color: #84BC22; 
+text-decoration: underline;
 }
